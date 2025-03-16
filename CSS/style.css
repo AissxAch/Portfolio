@@ -90,15 +90,15 @@ nav {
 
 #home .media {
     position: absolute;
-    right: 40px;
-    bottom: auto;
+    right: 20px;
+    bottom: -50px;
     display: flex;
     flex-direction: column;
   }
 
   #home .media a {
     margin: 8px 0;
-    font-size: 20px;
+    font-size: 40px;
     color: #2c3e50;
     font-weight: 500;
     opacity: 0.7;
@@ -110,12 +110,12 @@ nav {
   }
 
 .typing-container {
-    display: inline-block;
+    display: absolute;
 }
 
 .typing-text {
     color: #1de2d1;
-    animation: typing 3s;
+    animation: typing 3s steps(30) infinite;
     white-space: nowrap;
     overflow: hidden;
     border-right: 3px solid #1de2d1;
@@ -228,12 +228,11 @@ nav {
 
 /* Contact Section */
 #contact .content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
 }
 
 #contact .job {
@@ -251,7 +250,7 @@ nav {
     margin-top: 20px;
 }
 
-.typing-text1 {
+.text1 {
     color: #1de2d1;
     margin-left: 15px;
     white-space: nowrap;
@@ -279,6 +278,91 @@ nav {
     background: #1de2d1;
     transform: translateY(-5px);
     box-shadow: 0 5px 15px rgba(29, 226, 209, 0.3);
+}
+
+/* Projects Section */
+#projects {
+    padding-top: 120px;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.project-card {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+}
+
+.project-card i {
+    display: flex;
+    justify-content: center;
+    font-size: 2.5rem;
+    color: #1de2d1;
+    margin-bottom: 1rem;
+}
+
+.project-card h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+}
+
+.project-card p {
+    color: #4a5568;
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+}
+
+.project-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: auto;
+}
+
+.demo-link, .code-link {
+    padding: 8px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.demo-link {
+    background: #1de2d1;
+    color: #2c3e50;
+}
+
+.code-link {
+    border: 2px solid #1de2d1;
+    color: #2c3e50;
+}
+
+.demo-link:hover, .code-link:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 3px 10px rgba(29, 226, 209, 0.3);
+}
+
+/* Update Contact section positioning */
+#contact .content {
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
+    padding-top: 100px;
 }
 
 /* Animations */
