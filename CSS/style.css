@@ -1,4 +1,3 @@
-/* Combined CSS Styles */
 * {
     margin: 0;
     padding: 0;
@@ -11,7 +10,7 @@
     user-select: none;
 }
 
-/* Sections */
+
 section {
     height: 100vh;
     width: 100%;
@@ -20,7 +19,6 @@ section {
     background: #f0fdfa;
 }
 
-/* Navigation */
 nav {
     position: fixed;
     top: 0;
@@ -57,7 +55,6 @@ nav {
     color: #1de2d1;
 }
 
-/* Home Section */
 #home .content {
     position: relative;
     display: flex;
@@ -168,7 +165,6 @@ nav {
     transform: translateY(-3px);
 }
 
-/* Services Section */
 #services {
     padding-top: 120px;
 }
@@ -204,13 +200,21 @@ nav {
     font-size: 2.5rem;
     color: #1de2d1;
     margin-bottom: 1.5rem;
-    display: block;
+    display: flex;
+    justify-content: center;
 }
 
 .service-card h3 {
     color: #2c3e50;
     margin-bottom: 1rem;
     font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.service-card p {
+    display: flex;
+    justify-content: center;
 }
 
 .tech-stack {
@@ -223,10 +227,9 @@ nav {
 
 .tech-stack i {
     font-size: 2rem;
-    color: #2c3e50;
+    color: #1de2d1;
 }
 
-/* Contact Section */
 #contact .content {
     display: flex;
     justify-content: center;
@@ -280,7 +283,6 @@ nav {
     box-shadow: 0 5px 15px rgba(29, 226, 209, 0.3);
 }
 
-/* Projects Section */
 #projects {
     padding-top: 120px;
 }
@@ -356,7 +358,6 @@ nav {
     box-shadow: 0 3px 10px rgba(29, 226, 209, 0.3);
 }
 
-/* Update Contact section positioning */
 #contact .content {
     position: relative;
     top: auto;
@@ -365,13 +366,11 @@ nav {
     padding-top: 100px;
 }
 
-/* Animations */
 @keyframes typing {
     0% { width: 0; }
     100% { width: 100%; }
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
     .buttons {
         flex-direction: column;
