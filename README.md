@@ -18,7 +18,7 @@ Welcome to my portfolio! This repository contains projects and code samples that
 ## Skills
 - **Languages**: JavaScript, Python, Java
 - **Frameworks**: React, Node.js, Express
-- **Tools**: Git, Docker, Jenkins
+- **Tools**: Git
 
 ## Contact
 Feel free to reach out to me via [e-mail](mailto:achouri.aissa@outlook.com).

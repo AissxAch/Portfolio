@@ -65,7 +65,15 @@ nav {
     transform: translateY(-50%);
     text-align: center;
 }
-
+.logo {
+    position: absolute;
+    left: 20%;
+    bottom:45%;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
 #home .text {
     font-size: 27px;
     color: #2c3e50;
@@ -356,6 +364,42 @@ nav {
 .demo-link:hover, .code-link:hover {
     transform: translateY(-2px);
     box-shadow: 0 3px 10px rgba(29, 226, 209, 0.3);
+}
+
+#about {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+#about .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.download {
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about-text {
+    font-size: 20px;
+    max-height: 350px;
+    overflow: hidden;
+    color: #2c3e50;
+    text-align: center;
+}
+
+.about-text .textss {
+    color: #1de2d1;
+    animation: cubic-bezier(0.39, 0.575, 0.565, 1);
 }
 
 #contact .content {
