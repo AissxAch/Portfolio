@@ -459,7 +459,11 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  gap: 0.3em;
 }
+.stat-card__flag-icon { width: 1em; height: 1em; flex-shrink: 0; }
 
 /* =============================================
    SKILLS
@@ -485,7 +489,8 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   transform: translateY(-4px);
   box-shadow: 0 8px 30px rgba(0,0,0,0.2);
 }
-.skill-badge__icon { font-size: 1.5rem; }
+.skill-badge__icon { font-size: 1.5rem; display: flex; align-items: center; justify-content: center; width: 1.5rem; height: 1.5rem; }
+.skill-badge__icon svg { width: 100%; height: 100%; }
 .skill-badge__name {
   font-size: 0.92rem;
   font-weight: 500;
